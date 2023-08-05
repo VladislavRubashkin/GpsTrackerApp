@@ -37,6 +37,9 @@ android {
             classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.6.0"
         }
     }
+    buildFeatures {
+        viewBinding true
+    }
 
 }
 
