@@ -1,10 +1,8 @@
 package com.example.gpstrackerapp.presentation.screen
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.NavOptions
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.example.gpstrackerapp.R
@@ -16,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
 
-    //  TODO#1 - branches: architecture -> mainMenu -> navigationComponent ->
+    // TODO#1 - branches: architecture -> mainMenu -> navigationComponent ->
     //   - разобраться с зависимостями: 'org.osmdroid:osmdroid-android:6.1.10' 'com.github.MKergall:osmbonuspack:6.7.0'
     //   - permissions in manifest
     //   - request permissions
