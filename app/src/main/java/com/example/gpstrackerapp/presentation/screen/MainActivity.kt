@@ -14,10 +14,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
 
-    // TODO#1 - branches: architecture -> mainMenu -> navigationComponent ->
-    //   - разобраться с зависимостями: 'org.osmdroid:osmdroid-android:6.1.10' 'com.github.MKergall:osmbonuspack:6.7.0'
-    //   - permissions in manifest
-    //   - request permissions
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -32,6 +28,5 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         NavigationUI.setupWithNavController(bottomNavigationView, navController)
     }
-
 
 }
